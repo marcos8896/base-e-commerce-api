@@ -1,4 +1,4 @@
-<h1 align="center"><strong>Best Quality E-Commerce - GraphQL Server w/ TypeScript</strong></h1>
+<h1 align="center"><strong>Base E-Commerce Node API - GraphQL Server w/ TypeScript</strong></h1>
 
 <br />
 
