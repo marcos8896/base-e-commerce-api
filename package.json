@@ -4,7 +4,7 @@
     "start": "dotenv -- nodemon -e ts,graphql -x ts-node src/index.ts",
     "debug": "dotenv -- nodemon -e ts,graphql -x ts-node --inspect src/index.ts",
     "build": "rimraf dist && tsc",
-    "docker-nuke": "docker rm $(docker ps -a -q) -f && docker volume prune -f",
+    "docker-nuke": "docker rm $(docker ps -a -q) && docker volume prune",
     "docker-reset-all": "npm run docker-nuke && docker-compose up",
     "prisma-deploy": "prisma deploy prisma/"
   },
