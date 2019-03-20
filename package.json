@@ -6,7 +6,7 @@
     "build": "rimraf dist && tsc",
     "docker-nuke": "docker rm $(docker ps -a -q) && docker volume prune",
     "docker-reset-all": "npm run docker-nuke && docker-compose up",
-    "prisma-deploy": "prisma deploy prisma/"
+    "prisma-deploy": "prisma deploy prisma/ --env-file ./.env"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
