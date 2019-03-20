@@ -14,13 +14,17 @@ services:
             host: mysql
             port: 3306
             user: root
-            password: prisma
+            password: ${MYSQL_PASSWORD_PRISMA}
+            database: ${MYSQL_DATABASE_PRISMA}
             migrations: true
   mysql:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: prisma
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD_PRISMA}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD_PRISMA}
+      MYSQL_USER: ${MYSQL_USER_PRISMA}
+      MYSQL_DATABASE: ${MYSQL_DATABASE_PRISMA}
     volumes:
       - mysql:/var/lib/mysql
 volumes:
