@@ -7,6 +7,7 @@ services:
     - ${PRISMA_PORT}:${PRISMA_PORT}
     environment:
       PRISMA_CONFIG: |
+        managementApiSecret: ${PRISMA_MANAGEMENT_API_SECRET}
         port: ${PRISMA_PORT}
         databases:
           default:
