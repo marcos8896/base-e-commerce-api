@@ -27,9 +27,9 @@ $ npm install
 
 After that, you will need to create a file with the name of `.env`  on your root directory with the following environment variables:
 
-| Env variable　　　　　　　　　　　　　| Description 　　　　　　　　| Example
-| :--  | :--         |
-| `PRISMA_PORT` | The Prisma port in which your Prisma API will be running on top of a  Docker container. | PRISMA_PORT=4466 |
+| Env variable　　　　　　　　　　　　　| Description 　　　　　　　　| Example |
+| :--  | :--         | :--         |
+| `PRISMA_PORT` | The Prisma port in which your Prisma API will be running on top of a  Docker container. | PRISMA_PORT=4466
 | `PRISMA_API_ENDPOINT` | Endpoint that will point to your Prisma API | PRISMA_API_ENDPOINT=http://localhost
 | `PRISMA_SECRET`| It is the secret protecting access to your Prisma API | PRISMA_SECRET=mysecret123
 | `PRISMA_MANAGEMENT_API_SECRET`| This secret is used to generate and protect your Docker Prisma container. It is important to note that this secret will have to be used as an `export` later on to deployar our changes on the Prisma API. Don't worry, I will explain it | PRISMA_MANAGEMENT_API_SECRET=ultramanagementsecret123
