@@ -1,4 +1,4 @@
-# Specifies the HTTP endpoint of your Prisma API (deployed to a Prisma Demo server).
+# Specifies the HTTP endpoint of your Prisma API
 endpoint: ${env:PRISMA_API_ENDPOINT}:${env:PRISMA_PORT}
 
 # Defines your models, each model is mapped to the database as a table.
