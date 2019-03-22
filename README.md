@@ -119,7 +119,7 @@ And...
 #####Schema
 ![schema](https://user-images.githubusercontent.com/22345533/54801485-be826780-4c2c-11e9-842c-4dd3bb857923.png)
 
-Yeah... we are all most done with this setup. Now you can run the next command on your terminal to start the GraphQL Yoga Server. Which, if you recall, is the one that act as intermediary to only expose the mutations and queries that we define on our TypeScript/JS code. The command to run it is:
+Yeah... we are almost done with this setup. Now you can run the next command on your terminal to start the GraphQL Yoga Server. Which, if you recall, is the one that act as intermediary to only expose the mutations and queries that we define on our TypeScript/JS code. The command to run it is:
 ```sh
 $ yarn start
 ```
