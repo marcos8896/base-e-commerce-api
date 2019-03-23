@@ -1,9 +1,10 @@
-# Specifies the HTTP endpoint of your Prisma API (deployed to a Prisma Demo server).
-endpoint: https://us1.prisma.sh/public-razorvoice-197/base-e-commerce-api/dev
+# Specifies the HTTP endpoint of your Prisma API
+endpoint: ${env:PRISMA_API_ENDPOINT}:${env:PRISMA_PORT}
 
 # Defines your models, each model is mapped to the database as a table.
 datamodel: datamodel.prisma
 
+secret: ${env:PRISMA_SECRET}
 # Specifies the language and directory for the generated Prisma client.
 generate:
   - generator: typescript-client
