@@ -1,9 +1,9 @@
 import * as jwt from 'jsonwebtoken'
 import { Prisma } from './generated/prisma-client'
+import { ContextParameters } from 'graphql-yoga/dist/types'
 
-export interface Context {
+export interface Context extends ContextParameters {
   prisma: Prisma
-  request: any
 }
 
 export function getUserId(ctx: Context) {
