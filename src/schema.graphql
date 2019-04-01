@@ -1,3 +1,7 @@
+type SuccessMessage {
+  message: String
+}
+
 type Query {
   feed: [Post!]!
   drafts: [Post!]!
@@ -8,6 +12,7 @@ type Query {
 type Mutation {
   signup(email: String!, password: String!, name: String!): AuthPayload!
   login(email: String!, password: String!): AuthPayload!
+  logout: SuccessMessage!
   createDraft(title: String!, content: String!): Post!
   publish(id: ID!): Post!
   deletePost(id: ID!): Post!
