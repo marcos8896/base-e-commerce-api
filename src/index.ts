@@ -9,7 +9,10 @@ const server = new GraphQLServer({
     ...request,
     prisma,
   }),
-})
+  resolverValidationOptions: {
+    requireResolversForResolveType: false,
+  },
+});
 
 const options = {
   port: process.env.GRAPHQL_SERVER_PORT,
