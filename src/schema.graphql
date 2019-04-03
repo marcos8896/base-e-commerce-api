@@ -1,4 +1,7 @@
+# import * from './generated/prisma.graphql'
+
 type Query {
+  items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, first: Int): [Item]!
   feed: [Post!]!
   drafts: [Post!]!
   post(id: ID!): Post
@@ -11,6 +14,7 @@ type Mutation {
   createDraft(title: String!, content: String!): Post!
   publish(id: ID!): Post!
   deletePost(id: ID!): Post!
+  createItem(title: String, description: String, price: Int, image: String, largeImage: String): Item!
 }
 
 type Subscription {
