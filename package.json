@@ -1,34 +1,35 @@
 {
-  "name": "base-e-commerce-api",
-  "scripts": {
-    "start": "dotenv -- nodemon -e ts,graphql -x ts-node src/index.ts",
-    "debug": "dotenv -- nodemon -e ts,graphql -x ts-node --inspect src/index.ts",
-    "build": "rimraf dist && tsc",
-    "docker-nuke": "docker rm $(docker ps -a -q) && docker volume prune",
-    "docker-reset-all": "npm run docker-nuke && docker-compose up",
-    "prisma-deploy": "prisma deploy prisma/ --env-file ./.env"
-  },
-  "dependencies": {
-    "bcryptjs": "2.4.3",
-    "graphql-yoga": "1.17.4",
-    "jsonwebtoken": "8.5.0",
-    "prisma-binding": "^2.3.10"
-  },
-  "devDependencies": {
-    "@types/bcryptjs": "2.4.2",
-    "@types/node": "10.12.27",
-    "@typescript-eslint/eslint-plugin": "^1.6.0",
-    "@typescript-eslint/parser": "^1.6.0",
-    "dotenv-cli": "1.4.0",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "graphql-schema-linter": "^0.2.0",
-    "nodemon": "1.18.10",
-    "prettier": "^1.16.4",
-    "prisma": "1.27.1",
-    "rimraf": "2.6.3",
-    "ts-node": "7.0.1",
-    "typescript": "3.2.2"
-  }
+    "name": "base-e-commerce-api",
+    "scripts": {
+        "start": "dotenv -- nodemon -e ts,graphql -x ts-node src/index.ts",
+        "debug": "dotenv -- nodemon -e ts,graphql -x ts-node --inspect src/index.ts",
+        "build": "rimraf dist && tsc",
+        "docker-nuke": "docker rm $(docker ps -a -q) && docker volume prune",
+        "docker-reset-all": "npm run docker-nuke && docker-compose up",
+        "prisma-deploy": "prisma deploy prisma/ --env-file ./.env"
+    },
+    "dependencies": {
+        "bcryptjs": "2.4.3",
+        "cloudinary": "^1.14.0",
+        "graphql-yoga": "1.17.4",
+        "jsonwebtoken": "8.5.0",
+        "prisma-binding": "^2.3.10"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "2.4.2",
+        "@types/node": "10.12.27",
+        "@typescript-eslint/eslint-plugin": "^1.6.0",
+        "@typescript-eslint/parser": "^1.6.0",
+        "dotenv-cli": "1.4.0",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^4.1.0",
+        "eslint-plugin-prettier": "^3.0.1",
+        "graphql-schema-linter": "^0.2.0",
+        "nodemon": "1.18.10",
+        "prettier": "^1.16.4",
+        "prisma": "1.27.1",
+        "rimraf": "2.6.3",
+        "ts-node": "7.0.1",
+        "typescript": "3.2.2"
+    }
 }
