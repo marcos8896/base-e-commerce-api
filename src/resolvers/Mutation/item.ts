@@ -28,7 +28,6 @@ export const item = {
             });
             return item;
         } catch (err) {
-            console.log('err: ', err);
             throw new Error(`Failed to register item! - Err: ${err.message}`);
         }
     },
